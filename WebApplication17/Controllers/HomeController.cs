@@ -3,12 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication17.Data.Models;
 using WebApplication17.DataBase;
 
 namespace WebApplication17.Controllers
 {
     public class HomeController : Controller
     {
+        DataContext db = new DataContext();
         public IActionResult Index()=>View();
         public IActionResult Allview()
         {
@@ -21,6 +23,27 @@ namespace WebApplication17.Controllers
         {
             return View();
         }
+      
+        public IActionResult DeleteHouseDb()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult DeleteHouse(int? Id)
+        {
+            using (var db = new DataContext())
+            {
+                House house = db.Houses.FirstOrDefault(p => p.Id == Id);
+
+                db.Houses.Remove(house);
+                    
+                db.SaveChanges();
+            }
+            return Redirect("~/");
+        }
+
+
 
         [HttpPost]
         public IActionResult GetDataFromViewField(string _Decs, string _Img)
@@ -32,7 +55,6 @@ namespace WebApplication17.Controllers
                     {
                         Desc = _Decs,
                         Img = _Img
-                        
                     });
 
                 db.SaveChanges();

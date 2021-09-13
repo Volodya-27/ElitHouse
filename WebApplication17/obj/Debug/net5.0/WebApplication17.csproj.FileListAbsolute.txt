@@ -68,3 +68,4 @@ C:\Users\linec\source\repos\WebApplication17\WebApplication17\obj\Debug\net5.0\R
 C:\Users\linec\source\repos\WebApplication17\WebApplication17\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\linec\source\repos\WebApplication17\WebApplication17\obj\Debug\net5.0\Razor\Views\Home\_Layout.cshtml.g.cs
 C:\Users\linec\source\repos\WebApplication17\WebApplication17\obj\Debug\net5.0\WebApplication17.csproj.AssemblyReference.cache
+C:\Users\linec\source\repos\WebApplication17\WebApplication17\obj\Debug\net5.0\Razor\Views\Home\DeleteHouseDb.cshtml.g.cs
