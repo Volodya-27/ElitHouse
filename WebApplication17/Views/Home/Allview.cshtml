@@ -1,0 +1,55 @@
+﻿@using WebApplication17.Data.Models
+
+
+@{
+    ViewData["Title"] = "AllView";
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Все автомобили</title>
+    <style type="text/css">
+
+        .btn {
+           
+            text-decoration: none;
+            position: relative;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 50px 0 50px;
+            margin: 0 20px;
+            background: linear-gradient(-135deg, #00E5FE, #4463FE);
+            border-width: 0;
+            border-radius: 50px;
+            font-size: 20px;
+            color: white;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="align-content:center;">
+        <table border="1">
+            <tr>
+                <td width="50">№</td>
+                <td width="150">Description</td>
+                <td width="150">Image</td>
+           
+            </tr>
+            @foreach (House hs in ViewBag.Houses)
+            {
+                <tr>
+                    <td width="50">@hs.Id</td>
+                    <td width="150">@hs.Desc</td>
+                    <td width="150"><img src=@hs.Img > </td>
+                
+                </tr>
+            }
+        </table>
+        <br />
+
+        <a href="/Home/Add" class="btn">Add</a>
+    </div>
+</body>
+</html>
