@@ -49,7 +49,7 @@ namespace WebApplication17
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Add}");
+                    template: "{controller=Home}/{action=Allview}");
             });
         }
     }

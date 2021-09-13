@@ -1,26 +1,13 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Get Data</title>
-    <style type="text/css">
+﻿
+<div style="display:flex">
+    <form action="~/Home/GetDataFromViewField" method="post">
+      <center>  <label>Description</label><br /></center>
+        <input type="text" name="_Decs" value="Elit House" /><br />
+        <label>Img</label><br />
+        <input type="text" name="_Img" value="..." /><br />
+        <p><input type="submit" value="Send" /></p>
+    </form>
+</div>
 
-        .brd {
-            border: 4px double black; /* Параметры границы */
-            background: #e9e5e5; /* Цвет фона */
-            padding: 20px; /* Поля вокруг текста */
-        }
-    </style>
-</head>
-<body>
-    <div class="brd">
-        <form action="~/Home/GetDataFromViewField" method="post">
-            <label>Description</label><br />
-            <input type="text" name="_Decs" value="Elit House" /><br />
-            <label>Img</label><br />
-            <input type="text" name="_Img" value="..." /><br />
-         
-            <p><input type="submit" value="Send" /></p>
-        </form>
-    </div>
-    <hr />
-</body>
-</html>
+
+

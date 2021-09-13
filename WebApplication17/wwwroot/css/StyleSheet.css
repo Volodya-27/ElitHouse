@@ -1,0 +1,39 @@
+﻿body {
+    background-color:lemonchiffon;
+}
+
+.btn {
+    text-decoration: none;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 50px 0 50px;
+    margin: 0 20px;
+    background: linear-gradient(-135deg, #00E5FE, #4463FE);
+    border-width: 0;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+img {
+    width:350px;
+    height:200px;
+    border-radius:13px;
+
+}
+div
+{
+    display:flex;
+    display:inline-block;
+    margin:7px 12px 7px 12px
+}
+.divButton {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;   
+    color: white;
+    text-align: center;
+}

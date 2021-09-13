@@ -12,7 +12,7 @@ namespace WebApplication17.Controllers
         public IActionResult Index()=>View();
         public IActionResult Allview()
         {
-            ViewBag.Houses = new DataContext().Houses;
+            ViewBag.Houses = new DataContext().Houses/*.Where(a=>a.Id==2)*/; //comment SQL Linq for example
             return View();
         }
 
