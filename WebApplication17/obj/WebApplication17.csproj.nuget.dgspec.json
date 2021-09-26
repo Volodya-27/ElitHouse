@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\linec\\source\\repos\\WebApplication17\\WebApplication17\\WebApplication17.csproj": {}
+    "C:\\Users\\linec\\Source\\Repos\\ElitHouse3\\WebApplication17\\WebApplication17.csproj": {}
   },
   "projects": {
-    "C:\\Users\\linec\\source\\repos\\WebApplication17\\WebApplication17\\WebApplication17.csproj": {
+    "C:\\Users\\linec\\Source\\Repos\\ElitHouse3\\WebApplication17\\WebApplication17.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\linec\\source\\repos\\WebApplication17\\WebApplication17\\WebApplication17.csproj",
+        "projectUniqueName": "C:\\Users\\linec\\Source\\Repos\\ElitHouse3\\WebApplication17\\WebApplication17.csproj",
         "projectName": "WebApplication17",
-        "projectPath": "C:\\Users\\linec\\source\\repos\\WebApplication17\\WebApplication17\\WebApplication17.csproj",
+        "projectPath": "C:\\Users\\linec\\Source\\Repos\\ElitHouse3\\WebApplication17\\WebApplication17.csproj",
         "packagesPath": "C:\\Users\\linec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\linec\\source\\repos\\WebApplication17\\WebApplication17\\obj\\",
+        "outputPath": "C:\\Users\\linec\\Source\\Repos\\ElitHouse3\\WebApplication17\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,19 +44,23 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[5.0.10, )"
             }
           },
           "imports": [
@@ -76,7 +80,7 @@
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.5, 5.0.5]"
+              "version": "[5.0.9, 5.0.9]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
@@ -95,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.5.21302.13\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21458.32\\RuntimeIdentifierGraph.json"
         }
       }
     }
