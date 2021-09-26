@@ -7,5 +7,7 @@ namespace WebApplication17.Interfaces
     {
         IEnumerable<House> GetHouse();
         void AddHouse(House house);
+        void RemoveHouse(int houseId);
+
     }
 }

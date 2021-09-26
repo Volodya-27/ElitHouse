@@ -20,29 +20,22 @@ namespace WebApplication17.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        //[Authorize]
         public IActionResult Add()
         {
             return View();
         }
-        //public IActionResult DeleteHouseDb()
-        //{
-        //    return View();
-        //}
+        public IActionResult DeleteHouseDb()
+        {
+            return View();
+        }
 
-        //[HttpPost]
-        //public IActionResult DeleteHouse(int? Id)
-        //{
-        //    using (var db = new DataContext())
-        //    {
-        //        House house = db.Houses.FirstOrDefault(p => p.Id == Id);
-
-        //        db.Houses.Remove(house);
-
-        //        db.SaveChanges();
-        //    }
-        //    return Redirect("~/");
-        //}
+        [HttpPost]
+        public IActionResult DeleteHouse(int Id)
+        {
+            houseData.RemoveHouse(Id);
+            return Redirect("~/");
+        }
 
 
 
@@ -53,7 +46,6 @@ namespace WebApplication17.Controllers
             {
                 Desc = _Decs,
                 Img = _Img
-
             };
             houseData.AddHouse(house1);
             return Redirect("~/");
