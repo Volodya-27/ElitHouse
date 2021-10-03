@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 using WebApplication17.Data.Models;
 using WebApplication17.Interfaces;
 
@@ -33,7 +34,8 @@ namespace WebApplication17.Controllers
         [HttpPost]
         public IActionResult DeleteHouse(int Id)
         {
-            houseData.RemoveHouse(Id);
+
+             houseData.RemoveHouse(Id);
             return Redirect("~/");
         }
 

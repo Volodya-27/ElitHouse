@@ -30,11 +30,11 @@ namespace WebApplication17
 
         public void ConfigureServices(IServiceCollection services)
         {
-            string connection = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<DataContext>(options => options.UseSqlServer(connection));   
+            //string connection = Configuration.GetConnectionString("DefaultConnection");
+            //services.AddDbContext<DataContext>(options => options.UseSqlServer(connection));   
 
 
-            services.AddTransient<IHouseData, HouseData>();
+            services.AddTransient<IHouseData, HouseDataApi>();
             services.AddControllersWithViews(mvcOtions =>
             {
                 mvcOtions.EnableEndpointRouting = false;
